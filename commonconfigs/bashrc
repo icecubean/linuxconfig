@@ -1,0 +1,45 @@
+alias ls='ls --color=auto'
+#export PS1='\[\033[31m\]\u@\h [\w]:\$ \[\033[0m\]'
+
+#export LC_CTYPE=de_DE.UTF-8
+export DISPLAY=:0.0
+export EDITOR=emacsclient
+export HISTSIZE=2000
+## Get your bash on steroids
+alias top="htop"
+
+
+alias bc="bc -l ~/.bcrc"
+alias history="history | less +G"
+
+
+###navigate faster
+#shopt -s cdspell
+#source /etc/cdargs-bash.sh
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+set show-all-if-ambiguous on
+
+
+function calc {
+    echo $1 | bc -l
+}
+### every shell is the same screensession
+if [[ $TERM != 'screen' && $TERM != 'dumb' ]] ; then
+        if [[ `screen -list | grep -v "No" | awk '$2 { print }' | wc -l` == 0 ]] ; then
+                screen -e^zz
+        else
+                screen -rx
+	fi
+fi
+
+
+#if [ -f /etc/bash_completion ]; then
+#    . /etc/bash_completion.d/
+#fhhi
+
+
+#export PATH="$PATH:/home/icecube/scripts/:/usr/lib/openoffice/program/:/opt/java/bin/:/opt/altera/modelsim_ase/linux"

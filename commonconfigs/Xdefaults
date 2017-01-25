@@ -1,0 +1,104 @@
+term*background:black
+xterm*foreground:green
+
+aterm*foreground:green
+aterm*scrollBar_right:true
+aterm*transaprent:true
+aterm*shading:50
+
+
+mrxvt*background:black
+mrxvt*foreground:green
+
+urxvt.boldFont:				xft:DejaVu Sans Mono:bold:antialias=true:pixelsize=12
+urxvt.italicFont:			xft:DejaVu Sans Mono:italic:antialias=true:autohint=true:pixelsize=12
+urxvt.boldItalicFont:		xft:DejaVu Sans Mono:bold:italic:antialias=true:autohint=true:pixelsize=12
+urxvt.scrollKey:			true
+Xft.dpi:					75.0
+Xcursor.theme:				gentoo-silver
+
+urxvt*transparent: true
+urxvt*shading: 99
+
+
+URxvt.jumpScroll:			true
+URxvt.multiScroll:			true
+
+URxvt.secondaryScroll:		true
+URxvt.background:			black
+URxvt.foreground:			white
+URxvt.scrollBar:			true
+URxvt.scrollTtyOutput:		false
+URxvt.scrollWithBuffer:		true
+URxvt.scrollTtyKeypress:	true
+URxvt.inheritPixmap:		true
+
+
+
+
+!URxvt*scrollWithBuffer:  True
+!!URxvt*skipScroll:     False
+!!URxvt*secondaryscroll:     true
+URxvt.keysym.Meta-Page_Up: Shift+PageUp
+URxvt.keysym.Meta-Page_Down: Shift+PageDown
+URxvt*scrollBar_right:false
+URxvt*scrollstyle:rxvt
+
+
+URxvt.fading:				10
+URxvt.font:					xft:DejaVu Sans Mono:antialias=true:pixelsize=11
+URxvt.internalBorder:		5
+URxvt.externalBorder:		0
+URxvt.saveLines:			8192
+URxvt.mapAlert:				true
+URxvt.tintColor:			grey30
+URxvt.geometry:				100x25
+URxvt.tripleclickwords:		true
+URxvt.pastableTabs:			true
+URxvt.pointerBlank:			true
+
+! perl stuff
+URxvt.perl-ext-common:      default,matcher
+URxvt.urlLauncher:          firefox
+URxvt.matcher.button:       1
+
+URxvt.keysym.Meta-Page_Up: perl:pageup
+! Black + DarkGrey
+URxvt*color0:       #000000
+URxvt*color8:       #666666
+
+! DarkRed + Red
+URxvt*color1:       #b45151
+URxvt*color9:       #fe8686
+
+! DarkGreen + Green
+URxvt*color2:       #aece92
+URxvt*color10:      #c5ee83
+
+! DarkYellow + Yellow
+URxvt*color3:       Khaki3
+URxvt*color11:      #efe58b
+
+! DarkBlue + Blue
+URxvt*color4:       #2797d8
+URxvt*color12:      #86cdea
+
+! DarkMangenta + Mangenta
+URxvt*color5:       #aa6eaf
+URxvt*color13:      #cb96ce
+
+!DarkCyan + Cyan
+URxvt*color6:       #418179
+URxvt*color14:      #71bebe
+
+! LightGrey + White
+URxvt*color7:       #bebebe
+URxvt*color15:      #ffffff
+
+!Emacs*Font: Monospace-9.5:antialias=True
+!Emacs*Font: DejaVu Sans Mono:antialias=false:pixelsize=13
+
+Uxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 2
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]

@@ -1,0 +1,30 @@
+
+# termcap stuff
+#termcapinfo term ti@:te@
+# make the cursor show up in red:
+termcapinfo linux \u201cve=\E[?25h\E[?17;0;64c\u201d
+# this makes screen work within rxvt on cygwin:
+termcapinfo rxvt-cygwin-native ti@:te@
+# scrollback buffer in lines
+defscrollback 1000
+# my shell
+shell /bin/zsh
+# no copyright message
+startup_message off
+# show messages for 2 seconds
+msgwait 2
+# visual bell
+vbell off
+#vbell_msg \u201d *beep* \u201d
+# don\u2019t remember what these do
+deflogin off
+silencewait 15
+defflow off
+
+#`bindkey -c /bin/zsh /usr/bin/dvtm
+screen -t baseshell /bin/zsh
+
+
+##caption always "%{su} * | %{rw}%c %D | %{-}%-Lw%{rw}%50>%{rW}%n%f* %t %{-}%+Lw%<"
+
+caption always "%{-} * | %{-}%c %D | %{-}%-Lw%{-}%50>%{0 c}%n%f* %t %{-}%+Lw%<"
