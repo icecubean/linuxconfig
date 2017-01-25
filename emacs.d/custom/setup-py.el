@@ -17,8 +17,7 @@
   (require 'auto-complete-config)
   (setq
    python-shell-interpreter "ipython"
-   python-shell-prompt-regexp "In \\[[0-9]+\\]: "
-   python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
+   python-shell-interpreter-args "--simple-prompt -i"
    python-shell-completion-setup-code
    "from IPython.core.completerlib import module_completion"
    python-shell-completion-module-string-code
