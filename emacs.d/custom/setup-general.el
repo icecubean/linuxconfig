@@ -6,13 +6,6 @@
 
 
 (defalias 'yes-or-no-p 'y-or-n-p)
-(require 'fill-column-indicator)
-;; show unncessary whitespace that can mess up your diff
-(add-hook 'prog-mode-hook
-          (lambda () (interactive)
-            (fci-mode t)
-            (setq-default fci-rule-column 80)
-            (setq show-trailing-whitespace 1)))
 
 ;; use space to indent by default
 (setq-default indent-tabs-mode t)
@@ -62,6 +55,7 @@
   (require 'tramp)
   (setq tramp-default-method "ssh")
   )
+
 
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)

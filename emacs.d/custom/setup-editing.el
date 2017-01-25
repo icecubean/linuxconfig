@@ -37,6 +37,17 @@
                                           newline-mark))
                             (whitespace-mode 1)))
 
+
+(use-package fill-column-indicator
+  :ensure t
+  :defer t
+  :init
+  (setq-default fci-rule-column 80)
+  (setq show-trailing-whitespace 1)
+  )
+
+(add-hook 'prog-mode-hook 'fci-mode)
+
 ;; Package: volatile-highlights
 ;; GROUP: Editing -> Volatile Highlights
 (use-package volatile-highlights
