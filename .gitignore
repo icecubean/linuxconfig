@@ -1,0 +1,5 @@
+.python-environments/
+elpa/
+*projectile-bookmarks.eld
+*ede-projects.el
+*~
