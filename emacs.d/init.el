@@ -25,7 +25,7 @@
 (require 'setup-editing)
 (require 'setup-py)
 (require 'setup-c)
-
+(require 'setup-webide)
 
 ;; function-args
 ;; (require 'function-args)
