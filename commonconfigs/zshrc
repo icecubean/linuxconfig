@@ -3328,3 +3328,5 @@ alias ec='emacsclient -q -n'
 # Local variables:
 # mode: sh
 # End:
+export PATH="/home/icecube/.myconfig/linuxbrew/bin:$PATH"
+export XDG_DATA_DIRS="/home/icecube/.myconfig/linuxbrew/share:$XDG_DATA_DIRS"
