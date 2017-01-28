@@ -264,5 +264,7 @@ Position the cursor at it's beginning, according to the current mode."
 (global-set-key (kbd "M-o") 'prelude-smart-open-line)
 (global-set-key (kbd "M-o") 'open-line)
 (global-set-key (kbd "M-<f8>") 'highlight-symbol-at-point)
+(add-hook 'before-save-hook 'whitespace-cleanup)
+(setq make-backup-files nil)
 
 (provide 'setup-editing)
