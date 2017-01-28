@@ -1,0 +1,6 @@
+[user]
+	name = Peter Bestler
+	email = peter.bestler@gmail.com
+
+[push]
+	default = tracking
