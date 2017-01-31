@@ -27,6 +27,7 @@
 (require 'setup-py)
 (require 'setup-c)
 (require 'setup-webide)
+(require 'setup-magit)
 
 ;; function-args
 ;; (require 'function-args)

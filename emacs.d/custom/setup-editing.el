@@ -46,6 +46,19 @@
 
 (add-hook 'prog-mode-hook 'fci-mode)
 
+(use-package protobuf-mode
+  :init
+  (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
+  (setq-default indent-tabs-mode t)
+  (setq tab-width 4)
+  (speedbar-add-supported-extension ".proto")
+  )
+
+
+(use-package multiple-cursors
+  )
+
+
 ;; Package: volatile-highlights
 ;; GROUP: Editing -> Volatile Highlights
 (use-package volatile-highlights
