@@ -39,8 +39,6 @@
 
 
 (use-package fill-column-indicator
-  :ensure t
-  :defer t
   :init
   (setq-default fci-rule-column 80)
   (setq show-trailing-whitespace 1)
@@ -65,7 +63,6 @@
 ;; GROUP: Editing -> Yasnippet
 ;; Package: yasnippet
 (use-package yasnippet
-  :defer t
   :init
   (add-hook 'prog-mode-hook 'yas-minor-mode))
 
@@ -266,5 +263,9 @@ Position the cursor at it's beginning, according to the current mode."
 (global-set-key (kbd "M-<f8>") 'highlight-symbol-at-point)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 (setq make-backup-files nil)
+;; disable auto-save files (#foo#)
+(setq auto-save-default nil)
+;; disable backup files (foo~)
+(setq backup-inhibited t)
 
 (provide 'setup-editing)
