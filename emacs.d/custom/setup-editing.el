@@ -281,4 +281,7 @@ Position the cursor at it's beginning, according to the current mode."
 ;; disable backup files (foo~)
 (setq backup-inhibited t)
 
+
+(add-hook 'sh-mode-hook 'untabify)
+
 (provide 'setup-editing)
